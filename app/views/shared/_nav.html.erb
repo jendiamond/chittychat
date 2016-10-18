@@ -1,8 +1,8 @@
 <nav>
   <ul class='pull-left'>
-    <li><%= 'Relax' %></li>
-    <li><%= 'I need HELP with some code' %></li>
-    <li><%= 'Meetup of the night' %></li>
+    <% @rooms.each do |room| %>
+      <li><%= link_to room.name, room_path(room) %></li>
+    <% end %>
   </ul>
   <ul class='pull-right'>
     <li><%= link_to 'Logout', '#' %></li>
