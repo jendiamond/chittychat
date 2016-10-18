@@ -1,14 +1,5 @@
 <div id='container'>
-  <nav>
-    <ul class='pull-left'>
-      <li><%= 'Relax' %></li>
-      <li><%= 'I need HELP with some code' %></li>
-      <li><%= 'Meetup of the night' %></li>
-    </ul>
-    <ul class='pull-right'>
-      <li><%= link_to 'Logout', '#' %></li>
-    </ul>
-  </nav>
+  <%= render 'shared/nav' %>
   <div id='chat-container'>
     <header>Relaxation Room</header>
     <div id='chat-box'>
