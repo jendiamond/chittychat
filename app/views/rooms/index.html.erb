@@ -1,0 +1,28 @@
+<div id='container'>
+  <nav>
+    <ul>
+      <li><%= 'Relax' %></li>
+      <li><%= 'I need HELP with some code' %></li>
+      <li><%= 'Meetup of the night' %></li>
+    </ul>
+    <ul>
+      <li><%= 'link_to 'Logout', '#' %></li>
+    </ul>
+  </nav>
+  <div id='chat-container'>
+    <header>Relaxation Room</header>
+    <div id='chat-box'>
+      <div class='row'>
+        <p>Sample message</p>
+        <span>--author</span>
+      </div>
+    </div>
+
+    <div id='form-box'>
+      <%= form_for :message do |f| %>
+        <%= f.text_field :content, :id: 'message_input' %>
+        <%= f.submit 'Send Message' %>
+      <% end %>
+    </div>
+  </div>
+</div>
