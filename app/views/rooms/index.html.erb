@@ -6,7 +6,7 @@
       <li><%= 'Meetup of the night' %></li>
     </ul>
     <ul class='pull-right'>
-      <li><%= 'link_to 'Logout', '#' %></li>
+      <li><%= link_to 'Logout', '#' %></li>
     </ul>
   </nav>
   <div id='chat-container'>
@@ -20,7 +20,7 @@
 
     <div id='form-box'>
       <%= form_for :message do |f| %>
-        <%= f.text_field :content, :id: 'message_input' %>
+        <%= f.text_field :content, id: 'message_input' %>
         <%= f.submit 'Send Message' %>
       <% end %>
     </div>
