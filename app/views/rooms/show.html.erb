@@ -1,17 +1,18 @@
-<%= render 'shared/nav' %>
-<div id='chat-container'>
-  <header>Relaxation Room</header>
-  <div id='chat-box'>
-    <div class='row'>
-      <p>Sample message</p>
-      <span>--author</span>
+<div id='container'>
+  <%= render 'shared/nav' %>
+  <div id='chat-container'>
+    <header>Relaxation Room</header>
+    <div id='chat-box'>
+      <div class='row'>
+        <p>Sample message</p>
+        <span>--author</span>
+      </div>
     </div>
-  </div>
 
-  <div id='form-box'>
-    <%= form_for :message do |f| %>
-      <%= f.text_field :content, id: 'message_input' %>
-      <%= f.submit 'Send Message' %>
-    <% end %>
-  </div>
+    <div id='form-box'>
+      <%= form_for :message do |f| %>
+        <%= f.text_field :content, id: 'message_input' %>
+        <%= f.submit 'Send Message' %>
+      <% end %>
+    </div>
 </div>
