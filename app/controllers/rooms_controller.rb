@@ -5,10 +5,15 @@ class RoomsController < ApplicationController
   end
 
   def show
+    set_current_room
     @messages = room.messages
   end
 
   private
+
+  def set_current_room
+    session[:current_room] = params[:id] if params[:id]
+  end
 
   def rooms
     @rooms ||= Room.all
